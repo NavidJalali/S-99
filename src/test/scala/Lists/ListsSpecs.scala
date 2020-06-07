@@ -1,14 +1,14 @@
-package Main
+package Lists
 
 import org.specs2.mutable._
 
-class MainSpecs extends SpecificationWithJUnit {
-  "Given some list I should be able to" should {
+class ListsSpecs extends SpecificationWithJUnit {
+  "Give some list I" should {
     val empty = List.empty[Int]
     val one = List(1)
     val two = List(1, 2)
     val ten = (1 to 10).toList
-    import Main._
+    import Lists._
     "find a last element" in {
       last(empty) === None
       last(one) === Some(1)

@@ -1,8 +1,8 @@
-package Main
+package Lists
 
 import scala.util.{Failure, Success, Try}
 
-object Main {
+object Lists {
 
   // Find the last element of a list.
   @scala.annotation.tailrec
@@ -44,9 +44,4 @@ object Main {
     case v => List(v)
   }
 
-
-
-  def main(args: Array[String]): Unit = {
-    println(last(List()))
-  }
 }
